@@ -10949,6 +10949,11 @@ p.lead {
   font-size: 3rem;
 }
 
+.card-btn {
+  background-color: #6c757d;
+  /* color: var(--bs-nav-link-color); */
+}
+
 section.resume-section {
   display: flex;
   align-items: center;
