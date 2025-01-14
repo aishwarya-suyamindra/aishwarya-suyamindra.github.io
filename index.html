@@ -43,16 +43,17 @@
                         <span class="text-primary">Aishwarya Suyamindra!</span>
                     </h1>
                     <div class="subheading mb-5">
-                       Software Engineer | AI/ NLP Enthusiast
+                        Software Engineer | Recent CS grad exploring AI & NLP
                         <!-- <a href="mailto:aishwaryasr012@gmail.com">Contact Me!</a> -->
                     </div>
-                    <p class="lead mb-5">Software Engineer who loves turning ideas into impactful solutions. With expertise in mobile app development, backend development, and full-stack projects, I’m always eager to expand my skills. Currently, as a grad student in Computer Science at Northeastern University, I've been diving deeper into AI and NLP and developing AI-powered products.
+                    <p class="lead mb-5">Software Engineer who loves turning ideas into impactful solutions. With experience in iOS app development, backend development, and full-stack projects, I’m always eager to expand my skills and learn something new. As a recent CS grad, I've been diving deeper into AI, NLP and developing AI-powered products.
                     </br></br>
-                    I’m detail-oriented and a quick learner who thrives on collaborative problem-solving, excelling in dynamic environments where teamwork and innovative thinking are crucial to solve complex challenges. I’m excited to bring my skills in AI and software development to build things that make a difference!</p>
+                    Detail-oriented and quick to adapt, I thrive in collaborative environments where creative problem-solving and innovative thinking are essential to address complex challenges. I’m excited to leverage my skills in AI and software development to build things that make a difference! </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/aishwarya-suyamindra/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/aishwarya-suyamindra"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="mailto:aishwaryasr012@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a class="social-icon" href="https://leetcode.com/u/Aishwarya_sr12/"><i class="fa fa-code"></i></a>
                     </div>
                 </div>
             </section>
@@ -65,11 +66,11 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Northeastern University</h3>
                             <div class="subheading mb-3">Master of Science in Computer Science</div>
-                            <div>
-                                <p>Key coursework: Desgin paradigms, DBMS, Algorithms, Web Development, Machine Learning, Natural Language Processing, Cloud Computing</p>
-                                <p>Current: Machine Learning Operations</p>
+                            <div>Key coursework: Design paradigms, DBMS, Algorithms, Web Development, Machine Learning, Natural Language Processing, Cloud Computing, Machine Learning Operations
                             </div>
                             <p>GPA: 4.0/ 4.0</p>
+
+                            <p>Teaching Assistant: Software Development - Fall 2023, Fall 2024</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2023 - December 2024</span></div>
                     </div>
@@ -93,7 +94,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Software Engineer Intern</h3>
                             <div class="subheading mb-1">State Street (Charles River Development)</div>
-                            <div class="mb-3"><strong>Key Skills: Java, Gradle, Groovy, Backend development</strong></div>
+                            <div class="mb-3"><strong>Key Skills: Java, Gradle, Backend development, Technical documentation</strong></div>
                             <p>
                                 - Upgraded core library of the analytics service leveraged by 3+ components of the investment management system, addressing security vulnerabilities and enabling support for valuation of new financial instruments<br>
                                 - Led integration of updated library with the Java codebase, resolving 100% of failing test cases to ensure reliability<br>
@@ -110,9 +111,8 @@
                             <p>
                                 - Engineered business requirements for an iOS application using Swift and Xcode, debugged issues and achieved an 18% average increase in total downloads <br>
                                 - Refactored codebase to adhere to the MVVM framework, wrote unit test cases and enhanced code coverage by 35% <br>
-                                - Built responsive UI using UIKit, integrated Google Analytics and extended application to support 10+ languages <br>
-                                - Optimised background data retrieval by integrating parallel API’s and reduced storage time to on-device Realm
-                                database by 20% <br>
+                                - Optimized background data retrieval by integrating parallel API’s and reduced storage time to on-device Realm database by 20% <br>
+                                - Built responsive UI using UIKit, revamped application to support 10+ languages and integrated analytics to track metrics and provide data-driven insights to optimize user experience <br>
                                 - Collaborated with cross-functional teams, developed REST API’s in C# to retrieve data for mobile applications <br>
                             </p>
                         </div>
@@ -138,6 +138,22 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
                     <div class="row">
+
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-header">
+                                  
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">AI Assistant for Diagnosis</h5>
+                                  <p class="card-text">  
+Developed an AI-powered assistant to streamline patient-doctor interaction by generating diagnostic reports with potential treatment recommendations. Implemented a RAG-based system with Gemini, using Qdrant for vector storage and retrieval. Built a data pipeline with Apache Airflow to preprocess patient data, query the RAG, and generate prompts. Designed backend services with FastAPI and PostgreSQL, automated deployments with GitHub Actions, and deployed on GKE.
+                                  </p>
+                                    <div class="mb-3"><strong>Key Learnings: MLOps, ML pipelines, RAG, GCP, Kubernetes, Docker, FastAPI, Airflow</strong></div>
+                                  <a href="https://github.com/agirishkumar/MedScript" class="btn card-btn">Check it out!</a>
+                                </div>
+                              </div>
+                        </div>
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-header">
@@ -145,13 +161,16 @@
                                 </div>
                                 <div class="card-body">
                                   <h5 class="card-title">Adversarial Attacks on Language Models</h5>
-                                  <p class="card-text"> Aimed at identifying adversarial inputs for a text review from the IMDB dataset that would cause the model to alter it's original sentiment prediction for the review. 
-                                    Implemented gradient-based attack to generate inputs that successfully altered the model’s predictions 60% of the time and developed a FastAPI powered interface to generate and analyse these examples in real-time.</p>
+                                  <p class="card-text">Aimed to generate adversarial inputs for a sentiment analysis model trained on the IMDB dataset, aiming to expose vulnerabilities and analyze model behavior under adversarial conditions.
+                                    Implemented a gradient-based attack, leveraging GPT-2 to generate inputs, successfully altering the model’s predictions 60% of the time. Developed a FastAPI powered interface to generate and analyse these examples in real-time, to test model robustness.</p><br/>
                                     <div class="mb-3"><strong>Key Learnings: Python, PyTorch, HuggingFace, Large Language Models, Transformer models, Generative AI</strong></div>
                                   <a href="https://github.com/aishwarya-suyamindra/LM_adversarial_attacks" class="btn card-btn">Check it out!</a>
                                 </div>
                               </div>
                         </div>
+                    </div>
+
+                    <div class="row mt-4">
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-header">
@@ -166,23 +185,20 @@
                                 </div>
                               </div>
                         </div>
-                    </div>
-
-                    <div class="row mt-4">
                         <div class="col-6">
                             <div class="card">
                                 <div class="card-header"></div>
                                 <div class="card-body">
                                   <h5 class="card-title">Sentiment analysis with Reddit data</h5>
                                   <p class="card-text">
-                                    Aimed to analyze discussions in the Women in Tech subreddit to uncover key topics and gain insights into the sentiment of users’ comments on those topics. Extracted data using PRAW, pre-processed the data with NLTK and Gensim, and applied Latent Dirichlet Allocation (LDA) to identify major topics. Performed sentiment analysis on comments using both VADER and RoBERTa models, followed by a comparative analysis of their sentiment classifications and Visualized the results using word clouds.
+                                    Aimed to analyze discussions in the Women in Tech subreddit to uncover key topics and gain insights on the sentiment of user comments. Extracted data using PRAW, pre-processed the data with NLTK and Gensim, and applied LDA to identify major topics. Performed sentiment analysis on comments using both VADER and RoBERTa models, followed by a comparative analysis of their classifications and visualized the results using word clouds.
                                     <div class="mb-3"><strong>Key Learnings: Data scraping, Data pre-processing, Data Visualization, Topic Modelling, Sentiment Analysis </strong></div>
                                   </p>
                                   <a href="https://github.com/aishwarya-suyamindra/topic-modelling-and-sentiment-analysis" class="btn card-btn">Check it out!</a>
                                 </div>
                               </div>
                         </div>
-                        <div class="col-6">
+                        <!-- <div class="col-6">
                             <div class="card">
                                 <div class="card-header">
                                 </div>
@@ -193,7 +209,7 @@
                                   <a href="https://github.com/aishwarya-suyamindra/Web-Dev-Project" class="btn card-btn">Check it out!</a>
                                 </div>
                               </div>
-                        </div>
+                        </div> -->
                     </div>        
                     <div class="row mt-4">
                         <div class="col-6">
@@ -201,23 +217,22 @@
                                 <div class="card-header">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title">Image Manipulation Application</h5>
-                                  <p class="card-text"> Implemented an image manipulation tool using OOP and SOLID design principles, implementing filtering techniques such as blur, sharpen along with a histogram component to visualize the pixel distribution. Followed the MVC design pattern, employed Test-Driven Development to develop a modular, scalable codebase and ensure code quality.</p>
-                                    <div class="mb-3"><strong>Key Learnings: Java, JUnit, Clean code, Design patterns, Object-oriented programming</strong></div>
-                                  <a href="https://github.com/aishwarya-suyamindra/image-processing-application" class="btn card-btn">Check it out!</a>
+                                  <h5 class="card-title">Video Streaming Application</h5>
+                                  <p class="card-text">Designed and developed a full-stack web application that allows users to register, log in, stream, and upload videos. The platform also supports user interaction through video comments and follows. The backend is built using Node.js, Express.js and MongoDB, with video files efficiently stored and managed in MongoDB GridFS to support large file uploads. Developed the frontend using React.js and Redux and deployed the application to Netlify.</p>
+                                    <div class="mb-3"><strong>Key Learnings: React, Redux, Node.js, Express.js, MongoDB, HTML, CSS, Full-stack development</strong></div>
+                                  <a href="https://github.com/aishwarya-suyamindra/Web-Dev-Project" class="btn card-btn">Check it out!</a>
                                 </div>
                               </div>
                         </div>
                         <div class="col-6">
                             <div class="card">
-                                <div class="card-header"></div>
+                                <div class="card-header">
+                                </div>
                                 <div class="card-body">
-                                  <h5 class="card-title">Receipt Analysis Tool</h5>
-                                  <p class="card-text">
-                                    Engineered a Python-based tool using Flask and OpenCV to automate the detection and extraction of highlighted text from receipts. Aimed to enable efficient categorization of expenses by extracting relevant information directly from the receipts. Integrated MongoDB to store and retrieve categorized data, allowing for seamless expense tracking and management. 
-                                    <div class="mb-3"><strong>Key Learnings: Python, Flask, OpenCV, MongoDB </strong></div>
-                                  </p>
-                                  <a href="https://github.com/aishwarya-suyamindra/Receipt-analysis" class="btn card-btn">Check it out!</a>
+                                  <h5 class="card-title">Image Manipulation Application</h5>
+                                  <p class="card-text"> Implemented an image manipulation tool leveraging object-oriented programming (OOP) and adhering to SOLID design principles to ensure maintainability and scalability. Built filtering techniques such as blur, sharpen along with a histogram component to visualize the pixel distribution. Followed the MVC design pattern, employed Test-Driven Development using JUnit to develop a modular, scalable codebase and ensure code quality.</p>
+                                    <div class="mb-3"><strong>Key Learnings: Java, JUnit, Clean code, Design patterns, Object-oriented programming</strong></div>
+                                  <a href="https://github.com/aishwarya-suyamindra/image-processing-application" class="btn card-btn">Check it out!</a>
                                 </div>
                               </div>
                         </div>
@@ -234,43 +249,15 @@
                     <div class="mb-1"><strong>
                         🏬 Datastores: MySQL, MongoDB, Realm, SQLite, PostgreSQL, Redis</strong></div>
                     <div class="mb-1"><strong>
-                        ⚙️ Tools and Frameworks: React, Node.js, Express.js, Flask, FastAPI, JUnit, XCTest, Git, Docker, AWS, GCP, Airflow, CI/CD pipeline</strong></div>
+                        ⚙️ Tools and Frameworks: React, Node.js, Express.js, FastAPI, JUnit, XCTest, Git, Docker, Kubernetes, AWS, GCP, Airflow</strong></div>
                     <div class="mb-1"><strong>
-                        🧰 ML Libraries and Frameworks: PyTorch, scikit-learn, pandas, NumPy, Matplotlib, NLTK, Seaborn, MLflow</strong></div>
-                    <!-- <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul> -->
-                    <!-- <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div> -->
+                        🧰 ML Libraries and Frameworks: PyTorch, scikit-learn, pandas, HuggingFace, NumPy, MLflow, MLOps</strong></div>
+                    <div class="mb-1"><strong>
+                        🛠️ Software Development: SDLC, Microservices, Distributed Systems, CI/CD pipeline, Agile development
+                    </strong></div>
+                    <div class="mb-1"><strong>
+                        📝 Certifications: Docker Essential Training (LinkedIn Learning), Machine Learning Specialization (Coursera), Natural Language Processing Specialization (Coursera)
+                    </strong></div>
             </section>
             <hr class="m-0" />            
         </div>
